@@ -273,7 +273,7 @@ export default {
         class="vue-inspector-floats vue-inspector-card"
         :style="floatsStyle"
       >
-        <div>{{ linkParams.title }}:{{ linkParams.line }}:{{ linkParams.column }}</div>
+        <div>{{ decodeURI(linkParams.title) }}:{{ linkParams.line }}:{{ linkParams.column }}</div>
         <div class="tip">
           Click to go to the file
         </div>
